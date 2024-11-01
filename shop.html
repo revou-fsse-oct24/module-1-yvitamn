@@ -1,84 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERESE</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px; /* space between grid items */
+            padding: 20px;
+        }
+        .item {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+
+
 
 </head>
-<form id="searchForm">
-  <label for="searchInput">Search:</label>
-  <input type="text" id="searchInput" placeholder="Type to search..." required>
-  <button type="submit">Search</button>
-</form>
 
-<div class="search-results" id="searchResults"></div>
+<body>
+  <section>
+    <form id="searchForm">
+       <label for="searchInput">Search:</label> 
+      <input type="text" id="searchInput" placeholder="Type to search..." required>
+      <button type="submit">Search</button> 
+    </form>
+    <div class="search-results" id="searchResults"></div>
+    </section>
 
 
-    <header> 
-      <div style="text-align: center;">
-    <h1>TERESE</h1>
-    <form action="#" method="post">
 
-        <nav>
-           
-                 <!-- <label for="shop">SHOP</label>  -->
-                 <a href="shop.html">SHOP</a>
-        <select id="shop" name="shop">            
-            <option value="all">ALL</option>
-            <option value="new">New</option>
-            <option value="dresses">Dresses</option>
-            <option value="sets">Sets</option>
-        </select>
 
-                <a href="sizing.html">SIZING</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="returns.html">RETURNS</a>
-            
-        </nav>
-    </header>
+  <header class="sticky-header">
 
-    <!-- <style> -->
-      <!-- table { -->
-        <!-- margin: auto; /* Centers the table */ -->
-        <!-- border: 1px solid black; /* Optional: for visibility */ -->
-        <!-- width: 80%; /* Optional: to control width */ -->
+    <!-- <div style="text-align: center; display: flex; flex-direction: column; justify-content: start; align-items: center; height: 100vh; gap:10px;"></div> -->
+  <h1>TERESE</h1>
+  <form action="#" method="post">
+      <nav>
+               <!-- <label for="shop">SHOP</label>  -->
+               <a href="#">SHOP</a>
+      <select id="shop" name="shop">            
+          <option value="all">ALL</option>
+          <option value="new">New</option>
+          <option value="dresses">Dresses</option>
+          <option value="sets">Sets</option>
+      </select>
 
-    <main>
-      <div style="text-align: center;"></div>
-        <div class="page-width utility-bar__grid"><div
-            class="announcement-bar"
-            role="region"
-            aria-label="Announcement"
-            
-          ><a
-                  href="/collections/black"
-                  class="announcement-bar__link link link--text focus-inset animate-arrow"
-                ><p class="announcement-bar__message h5">
-                  <div style="text-align: center;">  
-                <span>15% OFF BLACK STYLES with code: FRIDAY</span>
+              <a href="sizing.html">SIZING</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="returns.html">RETURNS</a>
+
+            </nav>
+      
+      <div style="text-align: center;  background-color: #333;"></div>
+
+      <div class="page-width utility-bar__grid"><div
+          class="announcement-bar"
+          role="region"
+          aria-label="Announcement"
+          
+        ><a
+                href="/collections/black"
+                class="announcement-bar__link link link--text focus-inset animate-arrow"
+              ><p class="announcement-bar__message h5">
+                <div style="text-align: center;">  
+              <span>15% OFF BLACK STYLES with code: FRIDAY</span>
+  
+  </p></a></div><div class="localization-wrapper">
+  </div>
+   </div>
+   </div> 
+  </div>  
+  </header>
+
+
+
     
-    </p></a></div><div class="localization-wrapper">
-    </div>
-     </div>
-     </div> 
-    </div>  
+    <main>
+     
+        <!-- Two Column Grid Layout-->
+      <div class="container">
+        <div class="item item-1">Row 1, Column 1</div>
+        <div class="item item-2">Row 1, Column 2</div>
+     
+    </div> 
 
-    </main>
+    <style>
+      
+        
+   @media (max-width: 600px) {  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+  
 
-    <body>
+.container {
+    display: flex; 
+    justify-content: space-between; /* Align items evenly */
+    align-items: center; 
+    background-color: #f0f0f0; 
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
 
-    <table>
+.item {
+    background-color: white; 
+    color: black; /* Text color */
+    padding: 15px;
+    flex: 1; /* Allow items to grow equally */
+    margin: 5px; /* Space between items */
+    text-align: center; 
+    border-radius: 3px; /* Rounded corners for items */
+}
+
+.item-1{
+  <div style="text-align: center;">
+                <img src="images1/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900" >
+                <!-- <br>    -->
+              <img src="images1/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" > 
+}
+   }
+
+
+</style>
+
+
+    <!-- <table> 
+  
         <tr>
             <td class="left">
-              <div style="text-align: center;">
-                <img src="images1/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900" >
-                <!-- <br>   -->
-               <!-- <img src="images1/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" > -->
+             
                <!-- <br> -->
                <!-- <img src="images1/Linen-Menorca.webp" alt="Menorca Set Tobacco1" width="600" height="900" > -->
               </div>
-            </td>
+            </td> -->
           
             <td class="right">
               <div style="text-align: center;">
@@ -223,14 +301,84 @@ Fitted waist, please check your measurements against the product measurements be
 Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 31”, Waist: 24”, Hips: 35.5”.
 <br>
 Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 31”, Waist: 24”, Hips: 35.5”.
+</p>
+
+<section>
+<title>Centered Table with Flexbox</title>
+<style>
+    .table-container {
+        display: flex;
+        justify-content: center; /* Centers the table */
+    }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px; 
+        text-align: center;
+    }
+</style>
 
 
-<img src="sizing.png" alt="Sizing" width="500" height="250" >
+<div class="table-container">
+<table> 
+  <thead>   
+      <tr>
+      
+          <th></th>  <!-- Header cell -->
+          <th>XS</th>  <!-- Header cell -->
+          <th>S</th> <!-- Header cell -->
+          <th>M</th> <!-- Header cell -->
+          <th>L</th>         
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <th scope="row">LENGTH</th>
+      <td>39.8</td>
+      <td>40.0</td>
+      <td>40.2</td>
+      <td>40.4</td>   
+    </tr>
+    <tr>
+      
+      <th scope="row">WAIST CIRCUMFERENCE</th>
+      <td>26.4</td>
+      <td>28.0</td>
+      <td>29.5</td>
+      <td>31.1</td>   
+    </tr>
+    <tr>
+  
+      <th scope="row">HEM CIRCUMFERENCE</th>
+      <td>86.6</td>
+      <td>88.2</td>
+      <td>89.8</td>
+      <td>91.3</td> 
+    </tr> 
+  </tbody>
+</table>
 
-           </p>
+<!-- </div>
+
+</td>
+</tr>
+
+
+
+></div> -->
+
+</section>
+<!-- <img src="sizing.png" alt="Sizing" width="500" height="250" > -->
+
+           
+
 <br>
 <br>
 
+<section>
 <p> Garment Care <br>
   100% Linen - European Flax® & OEKO-TEX100 ® Certified
 
@@ -246,37 +394,15 @@ Avoid bleach and use environmentally friendly detergents. Avoid tumble dry and h
 
 Cool iron when needed.
 </p>
-                  </div>
+</section>              
 
-            </td>
-        </tr>
-    </table>
 
-    
-    ></div>
-
-    
+<!-- </style> -->
+    <!-- </table>  -->
 <br>
 <br>
 <br>
 <br>
-    <div class="field field--with-error">
-      <div style="text-align: center;">
-        <p>Join us on email and get 10% off your first purchase</p>
-      <input
-        autocomplete="email"
-        type="email"
-        id="ContactForm-email"
-        class="field__input"
-        name="contact[email]"
-        spellcheck="false"
-        autocapitalize="off"
-        value=""
-        aria-required="true"
-        
-        placeholder="Email"
-      ></div>
-    </div>
 
     
     
@@ -293,8 +419,33 @@ Cool iron when needed.
 
     
     </form>
+    
+  </main>
+
+<footer>
+  <div class="field field--with-error">
+    <div style="text-align: center;">
+      <p>Join us on email and get 10% off your first purchase</p>
+    <input
+      autocomplete="email"
+      type="email"
+      id="ContactForm-email"
+      class="field__input"
+      name="contact[email]"
+      spellcheck="false"
+      autocapitalize="off"
+      value=""
+      aria-required="true"
+      
+      placeholder="Email"
+    ></div>
+  </div>
+</footer>
 
 </body>
+
+
+  
 
 <!-- } -->
 <!-- </style> -->
