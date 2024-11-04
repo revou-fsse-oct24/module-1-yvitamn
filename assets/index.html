@@ -3,79 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>TERESE</title>
-    <link rel="stylesheet" href="shop.css">
+    <style>
+    <link rel="stylesheet" href="index.css">
+  </style>
 </head>
 
 <body>
-  <section>
-    <form id="searchForm">
-       <label for="searchInput">Search:</label> 
-      <input type="text" id="searchInput" placeholder="Type to search..." required>
-      <button type="submit">Search</button> 
-    </form>
-    <div class="search-results" id="searchResults"></div>
-    </section>
+
+
+  <div>
+    <!-- <form id="searchForm"> -->
+       <!-- <label for="searchInput">Search:</label>  -->
+      <!-- <input type="text" id="searchInput" placeholder="Type to search..." required> -->
+      <div class="search-container">
+      <button class="search-icon" onclick="toggleSearch()">
+      🔍
+      <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+  </button>
+ 
+  <script>
+        function toggleSearch() {
+            const searchInput = document.getElementById('search-input');
+            if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                searchInput.style.display = 'block';
+                searchInput.focus();
+            } else {
+                searchInput.style.display = 'none';
+            }
+        }
+    </script>
+</div>
+
+    <!-- </form> -->
+    <!-- <div class="search-results" id="searchResults"></div> -->
+    </div>
 
   <header class="sticky-header">
-    <div style="text-align: center;">
-   
+
+    <span style="color:black; text-align: center";> 
   <h1>TERESE</h1>
-  <form action="#" method="post">
-      <nav>
-               <!-- <label for="shop">SHOP</label>  -->
-               <a href="#">SHOP</a>
-      <select id="shop" name="shop">            
-          <option value="all">ALL</option>
+  
+      <nav>                          
+      <select a href="#" id="shop" name="shop">          
+          <option value="shop">SHOP</option>
           <option value="new">New</option>
           <option value="dresses">Dresses</option>
           <option value="sets">Sets</option>
       </select>
-
-              <a href="sizing.html">SIZING</a>
-              <a href="contact.html">CONTACT</a>
-              <a href="returns.html">RETURNS</a>
-
+              <a href="#">SIZING</a>
+              <a href="#">CONTACT</a>
+              <a href="#">RETURNS</a>
+            </span>
+      
             </nav>
       
-      <div style="text-align: center; background-color: #333; color: white;">
-<a
-                href="#"
-                class="announcement-bar-link"
-              ><p class="announcement-bar-message">
-                <div style="text-align: center;">  
+      <div style="text-align: center; background-color: #333; color: white";>
+        <a href="#" class="announcement-bar-link">
+          <p class="announcement-bar-message">
+              <div style="text-align: center;">  
               <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
-  
-  </p></a></div><div class="localization-wrapper">
+  </p>
+  </a>
   </div>
+ 
+  <!-- <div class="localization-wrapper"></div> -->
    </div>
-   </div> 
-  </div>  
-</div>
+
   </header>
   
     <main>
-    
-      <div class="container">
-        <div class="item item-1">Row 1, Column 1</div>
-        <div class="item item-2">Row 1, Column 2</div>
- 
-            <div class="item-1">
-             <img src="images1/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900" >
 
-             <img src="images1/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" >  
+      <div class="grid-container">
+        <div class="item-1">Header</div>
+        /* <div class="item-2">Menu</div> */
+        <div class="item-2">Main</div>
+        <div class="item-3">Right</div>
+        <div class="item-4">Footer</div>
+      </div>
+
+  <section class="product-page">
+
+            <section class="product-image">
+             <img src="img/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900">
+             <img src="img/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" >  
              
-              </div>
-           
-              <div class="item-2">
-              <div style="text-align: center;">
-                <div class="product__title" >
+      </section>
+              <section class="product-details">
+                <div>
+              <span style="text-align: center;">
+               
                     <h1>Menorca Set - Tobacco</h1>
-                    <h2>$309.00</h2>
-
+                    <p class="price">$309.00</p>
                 </div> 
-
-
                      <br>
                     <p>Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential. 
                       This long sleeve crop top is crafted from responsibly sourced linen and features a relaxed silhouette, 
@@ -106,11 +127,11 @@
                       This skirt comes with a beaded belt we're also wear with jeans and a t-shirt.
                     </p>
 
+<br>
+<br>
 
-<br>
-<br>
-<!-- size selector  -->
  <!-- Select Dropdown -->
+ <div class="selector-group" style=text-align: center;">
  <label for="sizes">Size</label>
  <br>
  <select id="sizes" name="sizes">
@@ -119,10 +140,14 @@
      <option value="m">M</option>
      <option value="l">L</option>
  </select>
+</div>
 <br>
 <br>
 <!-- quantity -->
+<div style="text-align: center;">
+<form action="#" method="post">
 <label for="sizes">Quantity</label>
+
 <br>
 <div class="quantity-container">
   <button class="quantity-button" onclick="changeQuantity(-1)">-</button>
@@ -139,7 +164,8 @@
       input.value = currentValue;
   }
 </script>
-                      
+</form>
+</div>                
                 
                       <!-- button add to cart -->
                       <!-- <button class="addtocart"> -->
@@ -147,6 +173,7 @@
 <br>
 
                       <!-- payment  -->
+                      <div class="checkbox-group">
                       <fieldset>
                         <legend>Select your payment:</legend>
                         <label>
@@ -165,31 +192,33 @@
                         <input type="checkbox" name="payment" value="buynowpaylater"> Buy now pay later
                     </label>
                     </fieldset>
-
+                      </div>
 <br>
 
-
+<div class="button-group">
+  <form action="#" method="post">
     <title>Add to Cart Button</title>
     <style>
-        .black-button {
-            background-color: black; /* Button color */
-            color: white; /* Text color */
-            border: none; /* No border */
-            padding: 10px 20px; /* Padding */
-            font-size: 16px; /* Font size */
-            cursor: pointer; /* Pointer cursor on hover */
-            border-radius: 5px; /* Rounded corners */
-        }
-        .black-button:hover {
-            background-color: darkgray; /* Change color on hover */
-        }
-    </style>
-
+      .black-button {
+        background-color: black; /* Button color */
+        color: white; /* Text color */
+        border: none; /* No border */
+        padding: 10px 20px; /* Padding */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+    }
+    .black-button:hover {
+        background-color: darkgray; /* Change color on hover */
+    }
+      
+    </style> 
+    
 <body>
-
 <button class="black-button" onclick="alert('Add to Cart!')">ADD TO CART</button>
-
 </body>
+ </form> 
+</div>
 
 <br>
 <br>
@@ -206,7 +235,7 @@ Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 
 Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 31”, Waist: 24”, Hips: 35.5”.
 </p>
 
-<section>
+<div>
 <title>Centered Table with Flexbox</title>
 <style>
     .table-container {
@@ -264,8 +293,8 @@ Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 
   </tbody>
 </table>
 
-</section>
-</section>
+</div>
+</div>
 <br>
 <br>
 
@@ -284,14 +313,12 @@ Avoid bleach and use environmentally friendly detergents. Avoid tumble dry and h
 
 Cool iron when needed.
 </p>
-</section>              
+</div>              
 
-
-
-
-    
-    </form>
+    <!-- </form> -->
               </div>
+            <!-- </div> */div productpage*/ -->
+              </section>
   </main>
 
 <footer>
@@ -314,6 +341,9 @@ Cool iron when needed.
   </div>
 </footer>
 
+
+
+</section>
 </body>
 
 

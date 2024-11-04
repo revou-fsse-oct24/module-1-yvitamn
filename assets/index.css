@@ -1,0 +1,215 @@
+main{
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+    
+    header, footer {
+        text-decoration: none;
+        position: fixed;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 20px; 
+        width: 100%; /* Ensure header/footer span full width */
+        z-index: 1000; /* To stay above other elements */
+    }
+    
+
+    .item-1 { grid-area: header; }
+    /* .item2 { grid-area: menu; } */
+    .item-2 { grid-area: main; }
+    .item-3 { grid-area: right; }
+    .item-4 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 20px;
+      width: 100%;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+    .sticky-header {
+        text-decoration: none;
+        position: sticky;
+        top: 0; 
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar li {
+        margin-right: 20px;   /* Space between items */
+    }
+    
+    .navbar li a {
+        color: white;         /* Link color */
+        text-decoration: none; /* Remove underline */
+        padding: 15px;       /* Padding for clickable area */
+    }
+    
+    .navbar li a:hover {
+        background-color: #575757; /* Background color on hover */
+        border-radius: 4px; /* Rounded corners */
+    }
+
+    .product-page {
+        
+        /* grid-template-columns: 1fr 1fr; Two equal columns */
+        /* grid-template-rows: repeat(4, 100px); */
+        display: flex;
+        justify-content: center;
+        /* grid-template-columns: repeat(2, 1fr); Two equal columns */
+        gap: 20px; /* Space between items */
+       
+        padding: 20px;
+        max-width: 1200px; /* Max width for larger screens */
+        margin: 40px auto; /* Centering the grid */
+       
+    }
+    
+    /* .item {
+        text-align: center; 
+        background-color: #ffffff;
+        padding: 15px;
+        margin: 5px; 
+        border-radius: 3px; 
+    } */
+    .item-1{
+        grid-area: header;
+    
+        }
+        .item-2{
+        grid-area: aside;
+    
+        }
+        .item-3{
+        grid-area: main;
+    
+        }
+        .item-4{
+        grid-area: footer;
+    
+        }
+.product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #e60000; /* Price color */
+    margin: 10px 0;
+}
+
+.description {
+    line-height: 1.5; /* Spacing between lines */
+    margin: 15px 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.add-to-cart,
+.buy-now {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1; /* Make buttons equal width */
+}
+
+.add-to-cart:hover,
+.buy-now:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    
+    /* Media Queries */
+    @media screen and (max-width: 600px) {
+        .product-page {
+            grid-template-columns: 1fr; /* Stack items in one column */
+        }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+
+    .add-to-cart, .buy-now {
+        width: 100%; /* Full width buttons */
+    }
+    }
+    
+
+
+}
+
+
+
+        
+
+  
+
+
+
+/* .item {
+    background-color: white; 
+    color: black; /* Text color */
+    padding: 15px;
+    flex: 1; /* Allow items to grow equally */
+    margin: 5px; /* Space between items */
+    text-align: center; 
+    border-radius: 3px; /* Rounded corners for items */
+}
+
+.item-1{
+  <div style="text-align: center;">
+                
+}
+   } */
