@@ -49,7 +49,7 @@ main {
         .sticky-header {
             display: flex;
             text-decoration: none;
-            position: sticky;
+            position: fixed;
             top: 0; 
             background-color: white;
             padding: 10px 20px;
@@ -62,7 +62,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center; 
-            align-items: center;
+            /* align-items: center; */
             /* justify-content: space-between; */
             border-radius: 3px; 
             margin: 10px 10px; 
@@ -100,7 +100,7 @@ main {
           }
         .sticky-footer{
                  display: flex;
-                position: sticky;
+                position: fixed;
                 bottom: 0;
                 background-color: #333;
                 color: white;
@@ -164,7 +164,7 @@ footer {
     padding: 10px;
     background-color: #333; /* Dark footer */
     color: white;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }

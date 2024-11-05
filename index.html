@@ -47,7 +47,7 @@
   <h1>TERESE</h1>
   
       <nav>                          
-      <select a href="#" id="shop" name="shop">          
+      <select a href="indeks.html" id="shop" name="shop">          
           <option value="shop">SHOP</option>
           <option value="new">New</option>
           <option value="dresses">Dresses</option>
@@ -70,6 +70,23 @@
   </div>
  
   <!-- <div class="localization-wrapper"></div> -->
+
+  <script>
+    // JavaScript for handling dropdown selection
+    document.getElementById("shop").addEventListener("change", function() {
+        const value = this.value;
+        if (value === "shop") {
+            window.location.href = "indeks.html"; 
+        } else if (value === "new") {
+            window.location.href = "new.html"; 
+        } else if (value === "dresses") {
+            window.location.href = "dresses.html"; 
+        } else if (value === "sets") {
+            window.location.href = "sets.html"; 
+        }
+    });
+</script>
+
   </span>
   </div>
   
