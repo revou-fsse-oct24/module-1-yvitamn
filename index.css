@@ -1,4 +1,4 @@
-main{
+/* main{ */
     
     body {
         font-family: Arial, sans-serif;
@@ -51,7 +51,10 @@ main {
      
     }
         .sticky-header {
+
+            width: 100%;
             display: flex;
+            justify-content: center;
             text-decoration: none;
             position: fixed;
             top: 0; 
@@ -104,6 +107,7 @@ main {
           }
         .sticky-footer{
                  display: flex;
+                 justify-content: center;
                 position: fixed;
                 bottom: 0;
                 background-color: #333;
@@ -114,7 +118,9 @@ main {
     
         }
 
-    
+       
+
+
     .navbar li {
         margin-right: 20px;   /* Space between items */
     }
@@ -164,6 +170,8 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 10px;
     background-color: #333; /* Dark footer */
@@ -194,7 +202,7 @@ footer {
     
 
 
-}
+/* } */
 
 
 
