@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>TERESE</title>
-    <style>
+    
     <link rel="stylesheet" href="index.css">
-  </style>
-  <script src=#></script>
+    <script src="index.js"></script>
+  
 </head>
 
 <body>
@@ -26,6 +25,7 @@
  
   <script>
         function toggleSearch() {
+          event.preventDefault();
             const searchInput = document.getElementById('search-input');
             if (searchInput.style.display === 'none' || searchInput.style.display === '') {
                 searchInput.style.display = 'block';
@@ -43,7 +43,7 @@
 
   <header class="sticky-header">
     <div class="item-1">
-    <span style="color:black; text-align: center";> 
+    <span style="color:black; text-align: center";>
   <h1>TERESE</h1>
   
       <nav>                          
@@ -56,7 +56,7 @@
               <a href="#">SIZING</a>
               <a href="#">CONTACT</a>
               <a href="#">RETURNS</a>
-            </span>
+            
       
             </nav>
       
@@ -70,16 +70,19 @@
   </div>
  
   <!-- <div class="localization-wrapper"></div> -->
-   </div>
-
-  </header>
+  </span>
   </div>
+  
+  </header>
+  
+
+
     <main>
 
       <div class="grid-container">
-        <div class="item-1">Header</div>       
-        <div class="item-2">Main</div>
-        <div class="item-3">Footer</div>
+        <div class="item-1"></div>       
+        <div class="item-2"></div>
+        <div class="item-3"></div>
        
       </div>
 
@@ -91,45 +94,45 @@
              <img src="img/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" >  
              
       </section>
-              <section class="product-details">
-                <div>
-              <span style="text-align: center;">
+
+<article>
+              <section class="product-details">            
+              <span style="text-align: center;"></span>
                
-                    <h1>Menorca Set - Tobacco</h1>
-                    <p class="price">$309.00</p>
-                </div> 
-                     <br>
-                    <p>Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential. 
-                      This long sleeve crop top is crafted from responsibly sourced linen and features a relaxed silhouette, 
-                      high boat neckline and flared shape through the sleeves for an exaggerated flair.
-                      Style it with the matching Es Raco Skirt for a timeless two-piece set.
-<br>
-                      The Es Raco Skirt in Tobacco is a brown maxi skirt designed 
-                      to sit high on the waist and fall down to a floating full length hem. Crafted from European Flax® linen 
-                      boasting complete traceability and socially responsible standards, the Es Raco Skirt is a wardrobe staple 
-                      you can wear to all occasions. Style it with the removable belt featuring multi-coloured resin beads,
-                      hand-crafted by our Indonesian artisans.          
-                      </p>
-<br>
-<br>
+                      <h1>Menorca Set - Tobacco</h1>
+                      <p class="price">$309.00</p>
+                      <p>Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential.</p>       
 
-                      <p> Details <br>
-                      Made from Linen - European Flax® & OEKO-TEX100® Certified <br>
-                      Women's belted maxi skirt <br>
-                      Removable belt with multi-coloured resin beads <br>
-                      High-rise waist <br>
-                      Fixed waistband <br>
-                      Thin belt loops <br>
-                      Vertical panel line shaping <br>
-                      Invisible zipper with hook and eye <br>
-                      Unlined <br>
-                      Designed to be fitted through the waist and relaxed through the skirt <br>
-                      Styling Note: This is a really easy, wearable two piece set, something you can wear for all occasions. 
-                      This skirt comes with a beaded belt we're also wear with jeans and a t-shirt.
-                    </p>
-
-<br>
-<br>
+                  <h3>Product Description</h3>
+                  <p>
+                    This long sleeve crop top is crafted from responsibly sourced linen and features a relaxed silhouette,
+                    high boat neckline, and flared shape through the sleeves for an exaggerated flair. 
+                    Style it with the matching Es Raco Skirt for a timeless two-piece set.
+                  </p>
+              
+                  <p>
+                    The Es Raco Skirt in Tobacco is a brown maxi skirt designed to sit high on the waist and fall to a floating full-length hem. 
+                    Crafted from European Flax® linen, boasting complete traceability and socially responsible standards, 
+                    the Es Raco Skirt is a wardrobe staple you can wear for all occasions. 
+                    Style it with the removable belt featuring multi-coloured resin beads, hand-crafted by our Indonesian artisans.
+                  </p>
+                </section>
+              
+                <section>
+                  <h3>Product Details</h3>
+                  <ul>
+                    <li>Made from Linen - European Flax® & OEKO-TEX100® Certified</li>
+                    <li>Women's belted maxi skirt</li>
+                    <li>Removable belt with multi-coloured resin beads</li>
+                    <li>High-rise waist</li>
+                    <li>Fixed waistband</li>
+                    <li>Thin belt loops</li>
+                    <li>Vertical panel line shaping</li>
+                    <li>Invisible zipper with hook and eye</li>
+                    <li>Unlined</li>
+                    <li>Designed to be fitted through the waist and relaxed through the skirt</li>
+                  </ul>
+                  <p><strong>Styling Note:</strong> This is an easy, wearable two-piece set, perfect for all occasions. The skirt comes with a beaded belt that you can also wear with jeans and a t-shirt.</p>
 
  <!-- Select Dropdown -->
  <div class="selector-group" style=text-align: center;">
@@ -199,7 +202,7 @@
 
 <div class="button-group">
   <form action="#" method="post">
-    <title>Add to Cart Button</title>
+    
     <style>
       .black-button {
         background-color: black; /* Button color */
@@ -227,7 +230,9 @@
 <br>
 
 
-                    <p> Size & Fits <br>
+                    <p> 
+                      <h3>Size & Fits</h3>
+                      <br>
 Fits true to size. Designed for a relaxed fitting look.
 Fitted waist, please check your measurements against the product measurements below.
 <br>
@@ -300,7 +305,9 @@ Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 
 <br>
 <br>
 
-<p> Garment Care <br>
+<p> 
+  <h3>Garment care</h3>
+  <br>
   100% Linen - European Flax® & OEKO-TEX100 ® Certified
 
 Linen is designed to soften over time, with wear.
@@ -321,6 +328,7 @@ Cool iron when needed.
               </div>
             <!-- </div> */div productpage*/ -->
               </section>
+</article>
   </main>
 
 <footer>
