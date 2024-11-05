@@ -28,6 +28,8 @@ and seamless checkout process.
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
+ Github pages: 
+ https://revou-fsse-oct24.github.io/module-1-yvitamn/
 ----
 ![Linen-Menorca.webp][def]
 
