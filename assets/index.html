@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERESE</title>
-    
+    <title>TERESE</title>  
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
   
@@ -13,7 +12,7 @@
 <body>
 
 
-  <div>
+  <!-- <div> -->
     <!-- <form id="searchForm"> -->
        <!-- <label for="searchInput">Search:</label>  -->
       <!-- <input type="text" id="searchInput" placeholder="Type to search..." required> -->
@@ -39,10 +38,11 @@
 
     <!-- </form> -->
     <!-- <div class="search-results" id="searchResults"></div> -->
-    </div>
+    <!-- </div> -->
 
-  <header class="sticky-header">
-    <div class="item-1">
+  <header>
+  <div class="sticky-header">
+   
     <span style="color:black; text-align: center";>
   <h1>TERESE</h1>
   
@@ -54,7 +54,7 @@
           <option value="sets">Sets</option>
       </select>
               <a href="#">SIZING</a>
-              <a href="#">CONTACT</a>
+              <a href="contact.html">CONTACT</a>
               <a href="#">RETURNS</a>
             
       
@@ -75,36 +75,35 @@
   
   </header>
   
-
+  
 
     <main>
 
-      <div class="grid-container">
+      <!-- <div class="grid-container">
         <div class="item-1"></div>       
         <div class="item-2"></div>
         <div class="item-3"></div>
        
-      </div>
+      </div> -->
 
-  <section class="product-page">
+  <section class="grid-container">
 
-            <section class="product-image";>
-              <div class="item-2">
+            <div class="product-image";>
+              <!-- <div class="item-2"> -->
              <img src="img/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900">
              <img src="img/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" >  
              
-      </section>
+              </div>
 
 <article>
-              <section class="product-details">            
+              <div class="product-details">            
               <span style="text-align: center;"></span>
                
-                      <h1>Menorca Set - Tobacco</h1>
+                      <h2>Menorca Set - Tobacco</h2>
                       <p class="price">$309.00</p>
-                      <p>Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential.</p>       
-
-                  <h3>Product Description</h3>
+                 
                   <p>
+                    Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential.
                     This long sleeve crop top is crafted from responsibly sourced linen and features a relaxed silhouette,
                     high boat neckline, and flared shape through the sleeves for an exaggerated flair. 
                     Style it with the matching Es Raco Skirt for a timeless two-piece set.
@@ -116,10 +115,8 @@
                     the Es Raco Skirt is a wardrobe staple you can wear for all occasions. 
                     Style it with the removable belt featuring multi-coloured resin beads, hand-crafted by our Indonesian artisans.
                   </p>
-                </section>
-              
-                <section>
-                  <h3>Product Details</h3>
+   
+                  <h4>Product Details</h4>
                   <ul>
                     <li>Made from Linen - European Flax® & OEKO-TEX100® Certified</li>
                     <li>Women's belted maxi skirt</li>
@@ -132,10 +129,10 @@
                     <li>Unlined</li>
                     <li>Designed to be fitted through the waist and relaxed through the skirt</li>
                   </ul>
-                  <p><strong>Styling Note:</strong> This is an easy, wearable two-piece set, perfect for all occasions. The skirt comes with a beaded belt that you can also wear with jeans and a t-shirt.</p>
+                  <p>Styling Note: This is an easy, wearable two-piece set, perfect for all occasions. The skirt comes with a beaded belt that you can also wear with jeans and a t-shirt.</p>
 
  <!-- Select Dropdown -->
- <div class="selector-group" style=text-align: center;">
+ <div class="selector-group" style="text-align: center;">
  <label for="sizes">Size</label>
  <br>
  <select id="sizes" name="sizes";>
@@ -153,7 +150,7 @@
 <label for="sizes">Quantity</label>
 
 <br>
-<div class="quantity-container">
+<div class="quantity-container" style="text-align: center;">
   <button class="quantity-button" onclick="changeQuantity(-1)">-</button>
   <input type="number" id="quantity" class="quantity-input" value="1" min="1">
   <button class="quantity-button" onclick="changeQuantity(1)">+</button>
@@ -177,7 +174,7 @@
 <br>
 
                       <!-- payment  -->
-                      <div class="checkbox-group style=text-align: center;">
+                      <div class="checkbox-group" style="text-align: center;">
                   
                       <fieldset>
                         <legend>Select your payment:</legend>
@@ -200,38 +197,37 @@
                       </div>
 <br>
 
-<div class="button-group">
+<div class="button-group" style="text-align: center;">
   <form action="#" method="post">
     
     <style>
       .black-button {
-        background-color: black; /* Button color */
-        color: white; /* Text color */
-        border: none; /* No border */
-        padding: 10px 20px; /* Padding */
-        font-size: 16px; /* Font size */
+      
+        background-color: black;
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 16px; 
         cursor: pointer; /* Pointer cursor on hover */
-        border-radius: 5px; /* Rounded corners */
+        border-radius: 5px; 
     }
     .black-button:hover {
         background-color: darkgray; /* Change color on hover */
     }
       
     </style> 
-    
+    </form>
 <body>
+
 <button class="black-button" onclick="alert('Add to Cart!')">ADD TO CART</button>
 </body>
- </form> 
+ <!-- </form>  -->
 </div>
 
 <br>
 <br>
-<br>
-
-
                     <p> 
-                      <h3>Size & Fits</h3>
+                      <h4>Size & Fits</h4>
                       <br>
 Fits true to size. Designed for a relaxed fitting look.
 Fitted waist, please check your measurements against the product measurements below.
@@ -243,7 +239,7 @@ Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 
 </p>
 
 <div>
-<title>Centered Table with Flexbox</title>
+<!-- Centered Table with Flexbox -->
 <style>
     .table-container {
         display: flex;
@@ -306,7 +302,7 @@ Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 
 <br>
 
 <p> 
-  <h3>Garment care</h3>
+  <h4>Garment care</h4>
   <br>
   100% Linen - European Flax® & OEKO-TEX100 ® Certified
 
@@ -332,7 +328,7 @@ Cool iron when needed.
   </main>
 
 <footer>
-  <div class="item-3">
+  <div class="sticky-footer">
   <div class="field field--with-error">
     <div style="text-align: center;">
       <p>Join us on email and get 10% off your first purchase</p>
