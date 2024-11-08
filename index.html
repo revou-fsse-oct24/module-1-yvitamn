@@ -113,10 +113,22 @@
 
   <section class="grid-container">
 
-            <div class="product-image";>
+            <div class="product-image">
               <!-- <div class="item-2"> -->
-             <img src="assets/img/Menorca set.webp" alt="Menorca Set Tobacco" width="600" height="900">
-             <img src="assets/img/Menorca set1.webp" alt="Menorca Set Tobacco1" width="600" height="900" >  
+
+<picture>
+  <source media="(min-width:768px)" srcset="assets/img/Menorca set.webp">
+  <img src="assets/img/Menorca set.webp" alt="Menorca Set Tobacco" style="width:100%">
+  <source media="(min-width:768px)" srcset="assets/img/Menorca set1.webp">
+  <img src="assets/img/Menorca set1.webp" alt="Menorca Set Tobacco1" style="width:100%">
+  
+</picture>
+
+                <!-- <img class="visible-desktop" src="assets/img/Menorca set.webp" alt="Menorca Set Tobacco">                           
+                <img class="visible-mobile" src="assets/img/Menorca set1.webp" alt="Menorca Set Tobacco1"> -->
+
+                
+           
              <!-- <img src="assets/img/Linen-Menorca.jpg" alt="Menorca Set Tobacco1" width="600" height="900" >   -->
              
               </div>

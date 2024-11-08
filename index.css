@@ -203,14 +203,37 @@ footer {
     /* width: 100%; */
 }
     
+/* .visible-desktop{
+    
+    display: none;
+}
+.visible-mobile{
+    display: block;
+} */
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+/* media only screen and (min-width: 768px){
+.visible-desktop{
+            display: block;
+        }
+        .visible-mobile{
+            display: none;
+        } 
+    } */
 
 
 
     /* Media Queries */
     @media screen and (max-width: 768px) {
 
-
-
+        
         .product-page {
             grid-template-columns: 1fr; 
         }
@@ -223,6 +246,7 @@ footer {
     .add-to-cart, .buy-now {
         width: 100%; /* Full width buttons */
     }
+
     }
     
 
